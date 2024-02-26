@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
 	scroll-behavior:smooth;
@@ -163,4 +164,32 @@ li:hover .submenu {
 
 .submenu a:hover {
     background-color:#ff7f17;
+}
+#Magda{
+	background-image:url(Magda.png);
+	width:300px;
+	height:435px;
+	background-size:contain;
+	border-radius:10px;
+	float:right;
+}
+#Teo{
+	background-image:url(Teohar.png);
+	width:300px;
+	height:435px;
+	background-size:contain;
+	border-radius:10px;
+	float:left;
+}
+#tekst1{
+	height:435px;
+	float:right;
+	width:50vw;
+	font-family:Montserrat;
+}
+#tekst2{
+	height:435px;
+	float:left;
+	width:50vw;
+	font-family:Montserrat;
 }
