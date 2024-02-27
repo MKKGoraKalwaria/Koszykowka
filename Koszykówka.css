@@ -28,7 +28,7 @@ main{
 	float:left;
 }
 #tytuł{
-	width:34vw;
+	width:50vw;
 	height:10vh;
 	float:left;
 	text-align:left;
@@ -94,8 +94,8 @@ footer{
 	background-color:orange;
 }
 #Logo2{
-	width:17vw;
-	height:17vh;
+	width:40vw;
+	height:40vh;
 	background-image:url(grupa.png);
 	background-size:cover;
 	background-repeat:no-repeat;
