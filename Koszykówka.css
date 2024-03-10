@@ -38,8 +38,8 @@ main{
 	background-image:url(czas.png);
 	background-size:contain;
 	background-repeat:no-repeat;
-	width:27vw;
-	height:720px;
+	width:25vw;
+	height:80vh;
 	border-radius:10px;
 	float:right;
 	margin:10px;
