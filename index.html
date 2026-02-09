@@ -1,46 +1,86 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
-	<head>
-	<meta charset="UTF-8"/>
-	<title>MKK Góra Kalwaria</title>
-	<meta name="description" content="MKK Góra Kalwaria"/>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-	<meta name="keywords" content="MKK, Góra Kalwaria, Koszykówka"/>
-	<link rel="stylesheet" type="text/css" href="Koszykówka.css">
-	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
-	<link rel="shortcut icon" href="ikona.png">
-	</head>
-<body>
-<header><div id="Logo"></div><div id="tytuł"><h1>	Miejski Klub Koszykówki GK</h1></div></header>
-<nav>
-	<ul>
-		<li><a href="index.html" class="menu" target="_self">Strona główna</a></li>
-		<li><a href="#" class="menu">O nas</a>
-		<ul class="submenu">
-			<li><a href="#social" class="menu">Kontakt</a></li>
-			<li><a href="historia.html" class="menu">Historia</a></li>
-		</ul></li>
-		<li><a href="#" class="menu">Składy</a>
-			<ul class="submenu">
-				<li><a href="#" class="menu">U16M(wkrótce)</a></li>
-				<li><a href="#" class="menu">U14K(wkrótce)</a></li>
-				<li><a href="trenerzy.html" class="menu">Trenerzy</a></li>
-		
-	</ul>			
-</nav>
-<main><h3>🏀👧👦 Nasz klub koszykówki to miejsce, gdzie każdy się odnajdzie! 👧👦🏀</br>
-Drodzy przyjaciele koszykówki!</br>
-Chcemy Was serdecznie zaprosić do naszego klubu, gdzie trenują zarówno dziewczęta, jak i chłopcy w różnym wieku! 🤩🏀</br>
-Nie ważne, czy jesteś dziewczyną czy chłopcem, jeśli koszykówka to Twoja pasja, to u nas znajdziesz swoje miejsce.</br> Nasze treningi to nie tylko nauka gry w koszykówkę,</br> to także świetna zabawa i możliwość spędzania czasu z fantastyczną grupą ludzi, którzy kochają ten sport tak samo jak Ty! 🙌🎉</br>
-Jeśli jesteście gotowi dołączyć do naszej koszykarskiej rodziny, zapraszamy Was na trening! Niezależnie od Twojego poziomu zaawansowania,</br> jesteśmy otwarci na wszystkich, którzy chcą rozwijać swoje umiejętności i cieszyć się grą w koszykówkę. 🏀💪</br>
-Przyjdźcie do nas i przekonajcie się, że nasze treningi to nie tylko rywalizacja, to przede wszystkim przyjaźń i wspólna pasja! 🤗</br>
-Zapraszamy do kontaktu i dołączenia do naszej koszykarskiej rodziny! 💙🏀</h3><div id="Logo2"></div></main>
-<div id="bok"></div>
-<div id="social"><h3>
-<i class="icon-phone"></i>572-197-383</br>
-<i class="icon-mail-alt"></i>mkkoszgk@gmail.com</br>
-<i class="icon-facebook"></i><a href="https://www.facebook.com/mkkgk">Miejski Klub Koszykówki w Górze Kalwarii</a>
-</h3>
-</div>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Walentynka 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6eb;
+            margin-top: 100px;
+        }
 
-<footer><marquee direction="right" scrollamount=20><div id="pilka"></div></marquee></footer>
+        h1 {
+            color: #d6336c;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 25px;
+            margin: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #yesBtn {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        #noBtn {
+            background-color: #adb5bd;
+            color: white;
+            position: absolute;
+        }
+
+        #imageContainer {
+            margin-top: 30px;
+            display: none;
+        }
+
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Czy zostaniesz moją walentynką? 💕</h1>
+
+    <button id="yesBtn">Tak</button>
+    <button id="noBtn">Nie</button>
+
+    <div id="imageContainer">
+        <h2>Yay! 🥰</h2>
+        <img src="https://i.imgur.com/3ZQ3ZQp.png" alt="Przytulające się misie">
+    </div>
+
+    <script>
+        const noBtn = document.getElementById("noBtn");
+        const yesBtn = document.getElementById("yesBtn");
+        const imageContainer = document.getElementById("imageContainer");
+
+        // Uciekanie przycisku "Nie"
+        noBtn.addEventListener("mouseover", () => {
+            const maxX = window.innerWidth - noBtn.offsetWidth;
+            const maxY = window.innerHeight - noBtn.offsetHeight;
+
+            const x = Math.random() * maxX;
+            const y = Math.random() * maxY;
+
+            noBtn.style.left = x + "px";
+            noBtn.style.top = y + "px";
+        });
+
+        // Kliknięcie "Tak"
+        yesBtn.addEventListener("click", () => {
+            imageContainer.style.display = "block";
+            noBtn.style.display = "none";
+            yesBtn.style.display = "none";
+        });
+    </script>
+
+</body>
+</html>
